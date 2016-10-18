@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>my recipes</title>
+    <link href="http://css01.media-allrecipes.com/assets/deployables/v-1.45.0.2674/main-css.bundled.Css" rel="stylesheet">
+</head>
+<body>
+<div class="slider-container">
+    <div class="site-content">
+        <header class="header new-nav">
+            <ul class="ar-nav-section">
+                <li class="ar-logo-tab">
+                    <a href="/" target="_self">
+                        <div class="ar-logo">
+                            <img src="http://images.media-allrecipes.com/ar-images/ARlogo.svg" alt="My Recipes" width="96">
+                        </div>
+                    </a>
+                </li>
+                <li class="browse-recipes">
+                    <a href="#" id="navmenu_recipes" class="recipes-txt">
+                        <span>BROWSE</span><span class="icon--chevron-down"></span>
+                    </a>
+                </li>
+                <li class="search-tab ng-scope" ng-controller="ar_controllers_search">
+                    <div class="nav-search">
+                        <input id="searchText" type="text" placeholder="Find a recipe">
+                        <button class="btn-basic--small search-button">
+                            <span class="icon svg-icon--top-nav-bar--search-magnify svg-icon--top-nav-bar--search-magnify-dims"></span>
+                        </button>
+                        <div id="ingredientSearch" class="ingredient-searchtxt">Ingredient Search</div>
+                    </div>
+                </li>
+                <li class="social-notification">
+                    <div class="socialNotification">
+                        <span class="svg-icon--top-nav-bar--nav-bell svg-icon--top-nav-bar--nav-bell-dims"></span>
+                        <span class="notification-count ng-binding" >1</span>
+                    </div>
+                </li>
+                <li class="nav-favorites">
+                    <a href="#" target="_self">
+                        <span class="svg-icon--top-nav-bar--grey-heart svg-icon--top-nav-bar--grey-heart-dims"></span>
+                    </a>
+                </li>
+                <li class="nav-profile anonymous-user">
+                    <a href="#" target="_self">
+                        <div class="login-state">
+                            <div class="img-profile icon svg-icon--top-nav-bar--userhead svg-icon--top-nav-bar--userhead-dims"></div>
+                            <span class="username icon-user--default" id="offCanvasDisplayName">Create a profile</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="hamburger-tab">
+                    <a href="#">
+                        <div class="hamburger-nav">
+                            <span class="browse-recipes-iconbar"></span>
+                            <span class="browse-recipes-iconbar"></span>
+                            <span class="browse-recipes-iconbar"></span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <div class="container-content body-content">
+            <section class="home-page full-page ng-scope">
+
+                <section class="slider">
+
+                    <article class="slider__slide">
+                        <a data-carousel-link="" data-internal-referrer="hp_carousel 04_Tortilla Soup Recipes" data-referring-position="carousel 04" href="http://allrecipes.com/recipes/16563/soups-stews-and-chili/soup/tortilla-soup/?internalSource=hp_carousel 04_Tortilla Soup Recipes&amp;referringContentType=home page&amp;referringPosition=carousel 04" target="_self">
+                            <div class="slider__text">
+                                <h3>Tortilla Soup Recipes</h3>
+                                <p class="slider__description">As comforting as chicken noodle soup, but a lot crunchier.</p>
+                            </div>
+                            <img src="http://images.media-allrecipes.com/images/72532.jpg" class="slider__photo">
+                        </a>
+                    </article>
+                    <article class="slider__slide">
+                        <a data-carousel-link="" data-internal-referrer="hp_carousel 05_Simple Scones" data-referring-position="carousel 05" href="http://allrecipes.com/recipes/1997/bread/quick-bread/scones/?internalSource=hp_carousel 05_Simple Scones&amp;referringContentType=home page&amp;referringPosition=carousel 05" target="_self">
+                            <div class="slider__text">
+                                <h3>Simple Scones</h3>
+                                <p class="slider__description">Pumpkin, maple, or classic currant: these top-rated scone recipes are better than the coffee shop's.</p>
+                            </div>
+                            <img src="http://images.media-allrecipes.com/images/60501.jpg" class="slider__photo">
+                        </a>
+                    </article>
+                    <article class="slider__slide">
+                        <a data-carousel-link="" data-internal-referrer="hp_carousel 06_How To Roast Pumpkin Seeds" data-referring-position="carousel 06" href="http://dish.allrecipes.com/how-to-roast-pumpkin-seeds/?internalSource=hp_carousel 06_How To Roast Pumpkin Seeds&amp;referringContentType=home page&amp;referringPosition=carousel 06" target="_self">
+                            <div class="slider__text">
+                                <h3>How To Roast Pumpkin Seeds</h3>
+                                <p class="slider__description">Toasted and salted, pumpkin seeds have a nutty flavor. Seasoned with sweet and savory spices, they're even better.</p>
+                            </div>
+                            <img src="http://images.media-allrecipes.com/images/72317.jpg" class="slider__photo">
+                        </a>
+                    </article>
+                </section>
+
+                <h1 class="heading__h1">Recommended for you</h1>
+
+                <section id="grid" data-columns="4" class="grid salvattore-grid grid-fixed">
+
+                    <div class="column size-1of4">
+                        <article class="grid-col--fixed-tiles">
+                            <a title="Save this recipe" class="favorite ng-isolate-scope" data-imageurl="'http://images.media-allrecipes.com/userphotos'"><span class="ng-binding"></span></a>
+                            <a href="#"  class="ng-isolate-scope" target="_self">
+                            <img class="grid-col__rec-image ng-isolate-scope" data-lazy-load="" alt="Sloppy Joes II Recipe and Video - Ground beef, onion, green pepper, and ketchup are seasoned with garlic powder and sweetened with brown sugar to make this hearty meat filling. Serve on hamburger buns." title="Sloppy Joes II Recipe and Video" src="http://images.media-allrecipes.com/userphotos/250x250/747244.jpg" style="display: inline;">
+                            <span class="grid-col__header-text">Recipe of the Day</span>
+                            </a>
+                            <h3 class="grid-col__h3 grid-col__h3--recipe-grid"><a href="#" class="ng-isolate-scope" target="_self">
+                                Sloppy Joes II </a>
+                                <div class="grid-col__video"><a href="#"  class="ng-isolate-scope" target="_self">
+                                    </a><a href="#" class="ng-isolate-scope" target="_self"><span class="icon--videoplay-small-white"></span></a>
+                                </div>
+                            </h3>
+
+                            <a href="#" class="ng-isolate-scope" target="_self">
+                             <div class="grid-col__ratings">
+                                <div class="rating-stars" data-scroll-to-anchor="reviews" data-ratingstars="4.65000009536743">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/half-star-2015.svg">
+                                </div>
+                            <span class="grid-col__reviews">4K</span>
+                                    <div  style="margin: auto; margin-left: .5rem; display: inline-block; width: 122px; height: 34px">
+                                        <span id="ad-rotd"></span>
+                                        <div id="div-gpt-sponsorLogo" data-tier="1"></div><div id="div-gpt-mob-sponsorLogo" data-tier="1"></div>
+                                    </div>
+                                    <div class="rec-card__description">Ground beef, onion, green pepper, and ketchup are seasoned with garlic powder and sweetened with brown sugar to make this hearty meat filling. Serve on hamburger buns.</div>
+                                    </div>
+                            </a>
+                                    <div class="profile profile--recipe-card">
+                                    <ul class="cook-details">
+                                        <li>
+                                            <h4 class="no-profile"><span>Recipe by</span> Tamara</h4>
+                                        </li>
+                                    </ul>
+                                    </div>
+                        </article>
+
+                        <article class="grid-col--fixed-tiles">
+                            <a title="Save this recipe" class="favorite ng-isolate-scope" data-imageurl="'http://images.media-allrecipes.com/userphotos'"><span class="ng-binding"></span></a>
+                            <a href="#"  class="ng-isolate-scope" target="_self">
+                            <img class="grid-col__rec-image ng-isolate-scope" data-lazy-load="" alt="Sloppy Joes II Recipe and Video - Ground beef, onion, green pepper, and ketchup are seasoned with garlic powder and sweetened with brown sugar to make this hearty meat filling. Serve on hamburger buns." title="Sloppy Joes II Recipe and Video" src="http://images.media-allrecipes.com/userphotos/250x250/747244.jpg" style="display: inline;">
+                            <span class="grid-col__header-text">Staff Picks</span>
+                            </a>
+                            <h3 class="grid-col__h3 grid-col__h3--recipe-grid"><a href="#" class="ng-isolate-scope" target="_self">
+                                Salmon cakes </a>
+                                <div class="grid-col__video"><a href="#"  class="ng-isolate-scope" target="_self">
+                                    </a><a href="#" class="ng-isolate-scope" target="_self"><span class="icon--videoplay-small-white"></span></a>
+                                </div>
+                            </h3>
+
+                            <a href="#" class="ng-isolate-scope" target="_self">
+                             <div class="grid-col__ratings">
+                                <div class="rating-stars" data-scroll-to-anchor="reviews" data-ratingstars="4.65000009536743">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/half-star-2015.svg">
+                                </div>
+                            <span class="grid-col__reviews">4K</span>
+                                    <div  style="margin: auto; margin-left: .5rem; display: inline-block; width: 122px; height: 34px">
+                                        <span id="ad-rotd"></span>
+                                        <div id="div-gpt-sponsorLogo" data-tier="1"></div><div id="div-gpt-mob-sponsorLogo" data-tier="1"></div>
+                                    </div>
+                                    <div class="rec-card__description">salmon are seasoned with garlic powder and sweetened with brown sugar to make this hearty meat filling. Serve on hamburger buns.</div>
+                                    </div>
+                            </a>
+                                    <div class="profile profile--recipe-card">
+                                    <ul class="cook-details">
+                                        <li>
+                                            <h4 class="no-profile"><span>Recipe by</span> Ratatoulli</h4>
+                                        </li>
+                                    </ul>
+                                    </div>
+                        </article>
+                    </div>
+
+                    <div class="column size-1of4">
+
+                        <article class="grid-col--fixed-tiles marketing-card">
+                            <a href="#" class="ng-isolate-scope video-link" target="_self">
+                                <img class="grid-col__rec-image marketing-card-image ng-isolate-scope" alt="Watch it today. Serve it tonight." title="Watch it today. Serve it tonight." src="http://images.media-allrecipes.com/images/72464.jpg">
+
+                                <h3 class="grid-col__h3 grid-col__h3--recipe-grid">
+                                    Watch it today. Serve it tonight.
+                                </h3>
+                            </a>
+                            <a href="#" class="ng-isolate-scope" target="_self">
+                                <div class="rec-card__description">Dinner Spinner TV: the only cooking show that helps you get dinner done.</div>
+                            </a>
+                            <div class="profile profile--recipe-card">
+                                <a href="/cook/allrecipes/" target="_self">
+                                    <ul class="cook-details">
+                                        <li>
+                                            <img class="img-profile elevate-cook-thumbnail" alt="profile image" src="http://images.media-allrecipes.com/userphotos/140x140/02/40/06/2400622.jpg">
+                                        </li>
+                                        <li>
+                                            <h4><span>Posted by </span> Allrecipes </h4>
+                                            <ul class="cook-details__followers followers-count">
+                                                <li>
+                                                    <span class="icon--cook-card-follower" title="Followers"></span>
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span>2m</span>
+                                                </li>
+                                            </ul>
+                                            <ul class="cook-details__favorites favorites-count">
+                                                <li>
+                                                    <span class="icon--cook-card-favorite" title="Favorites"></span>
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span>1K</span>
+                                                </li>
+                                            </ul>
+                                            <ul class="cook-details__recipes-made recipes-made-count">
+                                                <li>
+                                                    <span class="icon--cook-card-made" title="Recipes Made"></span>
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span>60</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="grid-col--fixed-tiles">
+                            <a title="Save this recipe" class="favorite ng-isolate-scope" data-imageurl="'http://images.media-allrecipes.com/userphotos'"><span class="ng-binding"></span></a>
+                            <a href="#"  class="ng-isolate-scope" target="_self">
+                            <img class="grid-col__rec-image ng-isolate-scope" data-lazy-load="" alt="Sloppy Joes II Recipe and Video - Ground beef, onion, green pepper, and ketchup are seasoned with garlic powder and sweetened with brown sugar to make this hearty meat filling. Serve on hamburger buns." title="Sloppy Joes II Recipe and Video" src="http://images.media-allrecipes.com/userphotos/250x250/747244.jpg" style="display: inline;">
+                            <span class="grid-col__header-text">Recipe of the Day</span>
+                            </a>
+                            <h3 class="grid-col__h3 grid-col__h3--recipe-grid"><a href="#" class="ng-isolate-scope" target="_self">
+                                Sloppy Joes II </a>
+                                <div class="grid-col__video"><a href="#"  class="ng-isolate-scope" target="_self">
+                                    </a><a href="#" class="ng-isolate-scope" target="_self"><span class="icon--videoplay-small-white"></span></a>
+                                </div>
+                            </h3>
+
+                            <a href="#" class="ng-isolate-scope" target="_self">
+                             <div class="grid-col__ratings">
+                                <div class="rating-stars" data-scroll-to-anchor="reviews" data-ratingstars="4.65000009536743">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/half-star-2015.svg">
+                                </div>
+                            <span class="grid-col__reviews">4K</span>
+                                    <div  style="margin: auto; margin-left: .5rem; display: inline-block; width: 122px; height: 34px">
+                                        <span id="ad-rotd"></span>
+                                        <div id="div-gpt-sponsorLogo" data-tier="1"></div><div id="div-gpt-mob-sponsorLogo" data-tier="1"></div>
+                                    </div>
+                                    <div class="rec-card__description">Ground beef, onion, green pepper, and ketchup are seasoned with garlic powder and sweetened with brown sugar to make this hearty meat filling. Serve on hamburger buns.</div>
+                                    </div>
+                            </a>
+                                    <div class="profile profile--recipe-card">
+                                    <ul class="cook-details">
+                                        <li>
+                                            <h4 class="no-profile"><span>Recipe by</span> Tamara</h4>
+                                        </li>
+                                    </ul>
+                                    </div>
+                        </article>
+
+                        <article class="grid-col--fixed-tiles">
+                            <a title="Save this recipe" class="favorite ng-isolate-scope" data-imageurl="'http://images.media-allrecipes.com/userphotos'"><span class="ng-binding"></span></a>
+                            <a href="#"  class="ng-isolate-scope" target="_self">
+                            <img class="grid-col__rec-image ng-isolate-scope" data-lazy-load="" alt="Sloppy Joes II Recipe and Video - Ground beef, onion, green pepper, and ketchup are seasoned with garlic powder and sweetened with brown sugar to make this hearty meat filling. Serve on hamburger buns." title="Sloppy Joes II Recipe and Video" src="http://images.media-allrecipes.com/userphotos/250x250/747244.jpg" style="display: inline;">
+                            <span class="grid-col__header-text">Staff Picks</span>
+                            </a>
+                            <h3 class="grid-col__h3 grid-col__h3--recipe-grid"><a href="#" class="ng-isolate-scope" target="_self">
+                                Salmon cakes </a>
+                                <div class="grid-col__video"><a href="#"  class="ng-isolate-scope" target="_self">
+                                    </a><a href="#" class="ng-isolate-scope" target="_self"><span class="icon--videoplay-small-white"></span></a>
+                                </div>
+                            </h3>
+
+                            <a href="#" class="ng-isolate-scope" target="_self">
+                             <div class="grid-col__ratings">
+                                <div class="rating-stars" data-scroll-to-anchor="reviews" data-ratingstars="4.65000009536743">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/half-star-2015.svg">
+                                </div>
+                            <span class="grid-col__reviews">4K</span>
+                                    <div  style="margin: auto; margin-left: .5rem; display: inline-block; width: 122px; height: 34px">
+                                        <span id="ad-rotd"></span>
+                                        <div id="div-gpt-sponsorLogo" data-tier="1"></div><div id="div-gpt-mob-sponsorLogo" data-tier="1"></div>
+                                    </div>
+                                    <div class="rec-card__description">salmon are seasoned with garlic powder and sweetened with brown sugar to make this hearty meat filling. Serve on hamburger buns.</div>
+                                    </div>
+                            </a>
+                                    <div class="profile profile--recipe-card">
+                                    <ul class="cook-details">
+                                        <li>
+                                            <h4 class="no-profile"><span>Recipe by</span> Ratatoulli</h4>
+                                        </li>
+                                    </ul>
+                                    </div>
+                        </article>
+                    </div>
+
+                    <div class="column size-1of4">
+
+                        <article class="grid-col--fixed-tiles">
+                            <a title="Save this recipe" class="favorite ng-isolate-scope" ><span class="ng-binding"></span></a>
+
+                            <a href="#" class="ng-isolate-scope" target="_self">
+
+                                <img class="grid-col__rec-image ng-isolate-scope" alt="Quick and Easy Green Chile Chicken Enchilada Casserole Recipe and Video - Shredded chicken is layered with charred tortillas, sour cream, cheese, and enchilada sauce." title="Quick and Easy Green Chile Chicken Enchilada Casserole Recipe and Video" src="http://images.media-allrecipes.com/userphotos/250x250/250948.jpg" style="display: inline;">
+                                <span class="grid-col__header-text">Staff Pick</span>
+                            </a>
+                            <h3 class="grid-col__h3 grid-col__h3--recipe-grid">
+                                <a href="#" class="ng-isolate-scope" target="_self">
+                                    Quick and Easy Green Chile Chicken Enchilada Casserole
+                                </a>
+                                <div class="grid-col__video">
+                                    <a href="#" class="ng-isolate-scope" target="_self"></a>
+                                    <a href="#" class="ng-isolate-scope" target="_self"><span class="icon--videoplay-small-white"></span></a>
+                                </div>
+                            </h3>
+
+                            <a href="#"  class="ng-isolate-scope" target="_self">
+                                <div class="grid-col__ratings">
+                                    <div class="rating-stars" data-scroll-to-anchor="reviews" data-ratingstars="4.40999984741211">
+                                        <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                        <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                        <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                        <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                        <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/half-star-2015.svg">
+                                    </div>
+                                    <span class="grid-col__reviews">674</span>
+                                    <div class="rec-card__description">Shredded chicken is layered with charred tortillas, sour cream, cheese, and enchilada sauce.</div>
+                                </div>
+                            </a>
+                            <div class="profile profile--recipe-card">
+                                <a href="#" class="ng-isolate-scope" target="_self">
+                                    <ul class="cook-details">
+                                        <li>
+                                            <img class="img-profile elevate-cook-thumbnail" alt="profile image" src="http://images.media-allrecipes.com/mobile/allrecipes/images/icon-user-default_v2.png">
+                                        </li>
+                                        <li>
+                                            <h4><span>Recipe by</span> SGRCOOKI</h4>
+                                            <ul class="cook-details__followers followers-count">
+                                                <li>
+                                                    <span class="icon--cook-card-follower" title="Followers"></span>
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span>4</span>
+                                                </li>
+                                            </ul>
+                                            <ul class="cook-details__favorites favorites-count">
+                                                <li>
+                                                    <span class="icon--cook-card-favorite" title="Favorites"></span>
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span>13</span>
+                                                </li>
+                                            </ul>
+                                            <ul class="cook-details__recipes-made recipes-made-count">
+                                                <li>
+                                                    <span class="icon--cook-card-made" title="Recipes Made"></span>
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span>8</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="grid-col--fixed-tiles">
+                            <a title="Save this recipe" class="favorite ng-isolate-scope" data-imageurl="'http://images.media-allrecipes.com/userphotos'"><span class="ng-binding"></span></a>
+                            <a href="#"  class="ng-isolate-scope" target="_self">
+                            <img class="grid-col__rec-image ng-isolate-scope" data-lazy-load="" alt="Sloppy Joes II Recipe and Video - Ground beef, onion, green pepper, and ketchup are seasoned with garlic powder and sweetened with brown sugar to make this hearty meat filling. Serve on hamburger buns." title="Sloppy Joes II Recipe and Video" src="http://images.media-allrecipes.com/userphotos/250x250/747244.jpg" style="display: inline;">
+                            <span class="grid-col__header-text">Recipe of the Day</span>
+                            </a>
+                            <h3 class="grid-col__h3 grid-col__h3--recipe-grid"><a href="#" class="ng-isolate-scope" target="_self">
+                                Sloppy Joes II </a>
+                                <div class="grid-col__video"><a href="#"  class="ng-isolate-scope" target="_self">
+                                    </a><a href="#" class="ng-isolate-scope" target="_self"><span class="icon--videoplay-small-white"></span></a>
+                                </div>
+                            </h3>
+
+                            <a href="#" class="ng-isolate-scope" target="_self">
+                             <div class="grid-col__ratings">
+                                <div class="rating-stars" data-scroll-to-anchor="reviews" data-ratingstars="4.65000009536743">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/half-star-2015.svg">
+                                </div>
+                            <span class="grid-col__reviews">4K</span>
+                                    <div  style="margin: auto; margin-left: .5rem; display: inline-block; width: 122px; height: 34px">
+                                        <span id="ad-rotd"></span>
+                                        <div id="div-gpt-sponsorLogo" data-tier="1"></div><div id="div-gpt-mob-sponsorLogo" data-tier="1"></div>
+                                    </div>
+                                    <div class="rec-card__description">Ground beef, onion, green pepper, and ketchup are seasoned with garlic powder and sweetened with brown sugar to make this hearty meat filling. Serve on hamburger buns.</div>
+                                    </div>
+                            </a>
+                                    <div class="profile profile--recipe-card">
+                                    <ul class="cook-details">
+                                        <li>
+                                            <h4 class="no-profile"><span>Recipe by</span> Tamara</h4>
+                                        </li>
+                                    </ul>
+                                    </div>
+                        </article>
+                    </div>
+
+                    <div class="column size-1of4">
+
+                        <article class="grid-col--fixed-tiles">
+                            <a title="Save this recipe" class="favorite ng-isolate-scope" ><span class="ng-binding"></span></a>
+
+                            <a href="#" class="ng-isolate-scope" target="_self">
+
+                                <img class="grid-col__rec-image ng-isolate-scope" alt="Roasted Vegetables with Spaghetti Squash Recipe - This delicious dish is amazingly adjustable. The spaghetti squash supports sweet potato, carrots, onions, and acorn squash for a hearty side dish or a meal all by itself." title="Roasted Vegetables with Spaghetti Squash Recipe" src="http://images.media-allrecipes.com/userphotos/250x250/1060097.jpg" style="display: inline;">
+                                <span class="grid-col__header-text">Staff Pick</span>
+                                <h3 class="grid-col__h3 grid-col__h3--recipe-grid">
+                                    Roasted Vegetables with Spaghetti Squash
+                                </h3>
+                            </a>
+                            <a href="$" class="ng-isolate-scope" target="_self">
+                                <div class="grid-col__ratings">
+                                    <div class="rating-stars" data-scroll-to-anchor="reviews" data-ratingstars="3.89000010490417">
+                                        <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                        <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                        <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                        <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                        <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/empty-star.svg">
+                                    </div>
+                                    <span class="grid-col__reviews">6</span>
+                                    <div class="rec-card__description">This delicious dish is amazingly adjustable. The spaghetti squash supports sweet potato, carrots, onions, and acorn squash for a hearty side dish or a meal all by itself.</div>
+                                </div>
+                            </a>
+                            <div class="profile profile--recipe-card">
+                                <a href="$" class="ng-isolate-scope" target="_self">
+                                    <ul class="cook-details">
+                                        <li>
+                                            <img class="img-profile elevate-cook-thumbnail" alt="profile image" src="http://images.media-allrecipes.com/global/features/mini/14.jpg">
+                                        </li>
+                                        <li>
+                                            <h4><span>Recipe by</span> Gila</h4>
+                                            <ul class="cook-details__followers followers-count">
+                                                <li>
+                                                    <span class="icon--cook-card-follower" title="Followers"></span>
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span>2</span>
+                                                </li>
+                                            </ul>
+                                            <ul class="cook-details__favorites favorites-count">
+                                                <li>
+                                                    <span class="icon--cook-card-favorite" title="Favorites"></span>
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span>80</span>
+                                                </li>
+                                            </ul>
+                                            <ul class="cook-details__recipes-made recipes-made-count">
+                                                <li>
+                                                    <span class="icon--cook-card-made" title="Recipes Made"></span>
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span>37</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="grid-col--fixed-tiles">
+                            <a title="Save this recipe" class="favorite ng-isolate-scope" data-imageurl="'http://images.media-allrecipes.com/userphotos'"><span class="ng-binding"></span></a>
+                            <a href="#"  class="ng-isolate-scope" target="_self">
+                            <img class="grid-col__rec-image ng-isolate-scope" data-lazy-load="" alt="Sloppy Joes II Recipe and Video - Ground beef, onion, green pepper, and ketchup are seasoned with garlic powder and sweetened with brown sugar to make this hearty meat filling. Serve on hamburger buns." title="Sloppy Joes II Recipe and Video" src="http://images.media-allrecipes.com/userphotos/250x250/747244.jpg" style="display: inline;">
+                            <span class="grid-col__header-text">Recipe of the Day</span>
+                            </a>
+                            <h3 class="grid-col__h3 grid-col__h3--recipe-grid"><a href="#" class="ng-isolate-scope" target="_self">
+                                Sloppy Joes II </a>
+                                <div class="grid-col__video"><a href="#"  class="ng-isolate-scope" target="_self">
+                                    </a><a href="#" class="ng-isolate-scope" target="_self"><span class="icon--videoplay-small-white"></span></a>
+                                </div>
+                            </h3>
+
+                            <a href="#" class="ng-isolate-scope" target="_self">
+                             <div class="grid-col__ratings">
+                                <div class="rating-stars" data-scroll-to-anchor="reviews" data-ratingstars="4.65000009536743">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/full-star-2015.svg">
+                                    <img height="16" width="16" src="http://images.media-allrecipes.com/ar-images/icons/rating-stars/half-star-2015.svg">
+                                </div>
+                            <span class="grid-col__reviews">4K</span>
+                                    <div  style="margin: auto; margin-left: .5rem; display: inline-block; width: 122px; height: 34px">
+                                        <span id="ad-rotd"></span>
+                                        <div id="div-gpt-sponsorLogo" data-tier="1"></div><div id="div-gpt-mob-sponsorLogo" data-tier="1"></div>
+                                    </div>
+                                    <div class="rec-card__description">Ground beef, onion, green pepper, and ketchup are seasoned with garlic powder and sweetened with brown sugar to make this hearty meat filling. Serve on hamburger buns.</div>
+                                    </div>
+                            </a>
+                                    <div class="profile profile--recipe-card">
+                                    <ul class="cook-details">
+                                        <li>
+                                            <h4 class="no-profile"><span>Recipe by</span> Tamara</h4>
+                                        </li>
+                                    </ul>
+                                    </div>
+                        </article>
+                    </div>
+
+
+                </section>
+
+            </section>
+
+
+            <a href="https://secure.allrecipesmagazine.com/order/?containerName=i67gtar75&amp;psrc=I607RUW290DFB" target="_blank">
+                <div class="ad-mag-homeBtm__footer">
+                    <div class="ad-mag-homeBtm__img-wrap">
+                        <img class="ad-mag-homeBtm__img ng-isolate-scope" data-lazy-load="" data-original-src="http://images.media-allrecipes.com/ar-images/ads/ARMag-Fall2016v2.jpg" alt="Subscribe to Allrecipes Magazine" title="Allrecipes Magazine" src="http://images.media-allrecipes.com/ar-images/ads/ARMag-Fall2016v2.jpg">
+                    </div>
+                    <div class="ad-mag-homeBtm__text-wrap">
+                        <h4>Allrecipes Magazine</h4>
+                        <p>Cook 5-star dinners every time—get a full year for just $7.99 now.</p>
+                        <div id="btn" href="https://secure.allrecipesmagazine.com/order/?containerName=i67gtar75&amp;psrc=I607RUW290DFB" class="btn-basic--small btn-orange">Subscribe</div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </a>
+            </section>
+            </div>
+
+        </div>
+        <footer id="pageFooter" class="full-page">
+            <section class="grid grid-fixed">
+                <article class=" grid-col grid-col--tiles" style="position: absolute;left: 0px;top: 31.75px;">
+
+                    <ul class="social-sharing__icons">
+
+                        <li><a id="footer_facebook" href="https://www.facebook.com/allrecipes" title="Facebook" target="_blank" class="ui-link"><img title="Facebook" src="http://images.allrecipes.com/ar-images/spacer.gif" alt="Facebook"></a></li>
+                        <li><a id="footer_pinterest" href="http://pinterest.com/allrecipes/" title="Pinterest" target="_blank" class="ui-link"><img title="Pinterest" src="http://images.allrecipes.com/ar-images/spacer.gif" alt="Pinterest"></a></li>
+                        <li><a id="footer_twitter" href="https://twitter.com/Allrecipes" title="Twitter" target="_blank" class="ui-link"><img id="ctl00_Image3" title="Twitter" src="http://images.allrecipes.com/ar-images/spacer.gif" alt="Twitter"></a></li>
+                        <li><a id="footer_instagram" href="http://instagram.com/allrecipes" title="Instagram" target="_blank" class="ui-link"><img title="Instagram" src="http://images.allrecipes.com/ar-images/spacer.gif" alt="Instagram"></a></li>
+                        <li><a id="footer_tumblr" href="http://allrecipes.tumblr.com/" title="Tumblr" target="_blank" class="ui-link"><img title="Tumblr" src="http://images.allrecipes.com/ar-images/spacer.gif" alt="Tumblr"></a></li>
+                        <li><a id="footer_googleplus" href="https://plus.google.com/+allrecipes/" title="Google Plus" target="_blank" class="ui-link"><img title="Google Plus" src="http://images.allrecipes.com/ar-images/spacer.gif" alt="Google Plus"></a></li>
+                        <li><a id="footer_stumbleupon" href="http://www.stumbleupon.com/stumbler/Allrecipes" title="StumbleUpon" target="_blank" class="ui-link"><img title="StumbleUpon" src="http://images.allrecipes.com/ar-images/spacer.gif" alt="StumbleUpon"></a></li>
+                        <li><a id="footer_youtube" href="https://www.youtube.com/user/allrecipes" title="YouTube" target="_blank" class="ui-link"><img title="YouTube" src="http://images.allrecipes.com/ar-images/spacer.gif" alt="YouTube"></a></li>
+                    </ul>
+                </article>
+
+                <article class="grid-col grid-col--tiles" style="position: absolute; left: 408px; top: 31.75px;">
+                    <ul>
+                        <li>About Us</li>
+                        <li><a id="footer_newsroom" href="http://press.allrecipes.com/" target="_self">Newsroom</a></li>
+                        <li><a id="footer_jobs" href="http://dish.allrecipes.com/allrecipes-jobs/" target="_self">Jobs at Allrecipes</a></li>
+                    </ul>
+                </article>
+
+                <article class="grid-col grid-col--tiles footer_advertising" style="position: absolute; left: 817px; top: 31.75px;">
+                    <ul>
+                        <li>Advertising</li>
+                        <li><a id="footer_advertisewithus" class="" href="http://www.meredith.com/national-media/digital" target="_self">Advertise with Us</a></li>
+                        <li><a id="footer_womensnetwork" class="" href="http://www.meredith.com/marketing_solutions/interactive_media.html" target="_self">Meredith Women's Network</a></li>
+                    </ul>
+                </article>
+            </section>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
